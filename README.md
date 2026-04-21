@@ -35,3 +35,26 @@ Your shareable link will usually be:
 `https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPOSITORY_NAME/`
 
 If you want a cleaner custom link, you can later connect a custom domain in the GitHub Pages settings.
+
+## Share with Android and iPhone users
+
+The app is now set up like a lightweight installable web app.
+
+### Android
+
+1. Open the published GitHub Pages link in Chrome.
+2. Tap the browser menu.
+3. Choose `Install app` or `Add to Home screen`.
+4. The app can then launch full-screen from the home screen.
+
+### iPhone and iPad
+
+1. Open the published link in Safari.
+2. Tap the `Share` button.
+3. Choose `Add to Home Screen`.
+4. The app will open like an app icon from the home screen.
+
+### Important
+
+- The installable experience only works from a real `https://` link, not from a local `file://` path.
+- The service worker provides basic offline loading for the main app files after the first visit.

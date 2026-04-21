@@ -1200,3 +1200,9 @@ state.profiles = readProfiles();
 renderProfileOptions();
 setMode("load");
 applyTranslations();
+
+if ("serviceWorker" in navigator && location.protocol !== "file:") {
+  navigator.serviceWorker.register("./sw.js").catch(() => {
+    // Non-fatal: the app still works without offline install support.
+  });
+}
